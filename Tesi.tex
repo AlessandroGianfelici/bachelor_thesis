@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper,twoside]{book}
+\usepackage{verbatim}
+\usepackage[italian]{babel}
+\usepackage{tesiscienzeunibo}
+\usepackage{booktabs}
+\usepackage[nottoc]{tocbibind}
+\usepackage{textcomp}
+\usepackage{indentfirst}
+\graphicspath{{./figure/}}
+\hypersetup{
+  bookmarksopen, 
+  bookmarksopenlevel=2, 
+  pdftitle={Violazione CP e misura dell'angolo gamma nel sistema dei mesoni B neutri},
+  pdfauthor={Alessandro Gianfelici},
+  pdfsubject={Tesi di Laurea di Alessandro Gianfelici},
+  pdfkeywords={Violazione CP e misura dell'angolo gamma nel sistema dei mesoni B neutri}} % Queste informazioni non vengono stampate, ma sono conservate nel documento pdf. Sono consultabili col menu "File>Document Properites>Description". Vengono buone a scopi archivistici.
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{latexsym}
+\usepackage{makeidx}
+\usepackage{mathrsfs}
+\usepackage[utf8x]{inputenc}
+
+
+\theoremstyle{plain}
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{proposizione}[teorema]{Proposizione}
+\newtheorem{lemma}[teorema]{Lemma}
+\newtheorem{corollario}[teorema]{Corollario}
+
+\theoremstyle{definition}
+\newtheorem{definizione}[teorema]{Definizione}
+\newtheorem{esempio}[teorema]{Esempio}
+
+\theoremstyle{remark}
+\newtheorem{osservazione}[teorema]{Osservazione}
+
+\makeindex
+
+  \titolo{Violazione di CP}
+  \sottotitolo{e misura dell'angolo $\gamma$\\ nel sistema dei mesoni B neutri}
+  \laureando{Alessandro Gianfelici}
+ \annoaccademico{2011-2012}
+ \facolta{Scienze Matematiche, Fisiche e Naturali} % (default)
+ % \corsodilaurea{Fisica} % per la laurea vecchio ordinamento
+ \corsodilaureatriennale{Fisica}
+ \relatore[Prof.]{Domenico Galli}
+\correlatore [Dott.]{Umberto Marconi}
+ \dedica{
+\emph{Desidero ringraziare il prof. Angelo Carbone ed il dott. Denis Derkach, per il prezioso aiuto prestatomi nell'analisi dei dati sperimentali impiegati per la misura dell'angolo $\gamma$.}}
+\begin{document}
+\maketitle
+\input {abstract}
+\renewcommand{\theequation}{\arabic{equation}}%consigliato per migliorare i numeri di equazione nell'introduzione
+\renewcommand{\thesection}{\arabic{section}}%consigliato per migliorare i numeri di equazione nell'introduzione
+\input {introduzione}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}%si torna alle formule numerate come da default
+\renewcommand{\thesection}{\thechapter.\arabic{section}}%si torna alle sezioni numerate come da default
+\tableofcontents
+
+\input {capitolo1}
+\input {capitolo2}
+\input {capitolo3}
+\input {capitolo4}
+
+\input {capitolo5}
+
+\input {capitolo6}
+\renewcommand{\theequation}{\arabic{equation}}%consigliato per migliorare i numeri di equazione nell'introduzione
+\renewcommand{\thesection}{\arabic{section}}%consigliato per migliorare i numeri di equazione nell'introduzione
+\input {conclusioni}
+\renewcommand{\theequation}{\thechapter.\arabic{equation}}%si torna alle formule numerate come da default
+\renewcommand{\thesection}{\thechapter.\arabic{section}}%si torna alle sezioni numerate come da default
+\appendix
+\input{appendici}
+\backmatter
+\listoffigures
+\listoftables
+\input{bibliografia}
+ 
+ \end{document}

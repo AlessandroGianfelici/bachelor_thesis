@@ -1,0 +1,439 @@
+     %%%%%%%%%%%%%%%%%%%%
+     %                  %
+     %  capitolo1.tex   %
+     %                  %
+     %%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Trasformazioni di simmetria P, C e T}
+\noindent
+La coniugazione di carica (C), la parità (P) e l'inversione temporale (T) sono  trasformazioni discrete di sistemi fisici.
+È appurato che prese singolarmente esse siano simmetrie valide solo parzialmente, in quanto, ad esempio, sono tutte e tre violate nelle interazioni deboli.
+La loro composizione CTP è invece ritenuta una simmetria esatta della Natura, sempre soddisfatta da ciascuna interazione fondamentale. 
+
+Quanto appena affermato corrisponde all'enunciato di un importante teorema (\emph{Teorema CTP}), che rappresenta una convinzione profondamente 
+radicata nella fisica moderna; tanto che la verifica dell'invarianza per CTP è uno dei criteri per verificare la coerenza di nuove teorie.
+
+Nel seguito si definiranno le tre trasformazioni discrete di simmetria in ambito quantistico, 
+e saranno definiti gli opertatori $\mathscr{C}$, $\mathscr{P}$, $\mathscr{T}$ ad esse associati.
+
+%
+Definto con  $\mathscr{O}$ uno qualsiasi degli operatori  $\mathscr{C}$, $\mathscr{P}$ o $\mathscr{T}$,  ci si attende che per un sistema simmetrico si abbia:
+\begin{equation}
+[\mathscr{O},\mathscr{H}] = 0
+\end{equation}
+%
+%Nella meccanica classica l'applicazione di una simmetria discreta
+%non influisce sulle coordinate temporali del sistema, cioè
+%commuta con la traslazione temporale $t'\rightarrow t + t_0$.
+%Applicando il principio di corrispondenza, nel passaggio alla
+%meccanica quantistica è lecito attendersi tali trasformazioni
+%abbiano analoghe proprietà, cioè che:
+%
+cioè che ciascuno dei tre operatori commuti con l'Hamiltoniana del sistema. Come detto però ciò non è vero nel caso ci si riferisca alle interazioni deboli. 
+%Se ne conclude che in processi (interazioni) non invarianti per una delle
+%trasformazioni discrete indicate non \`e possibile definire in maniera
+%consistente il relativo operatore. Questa difficolt\`a pu\`o essere
+%aggirata limitandosi a definire gli operatori  al caso delle interazioni invarianti:
+%elettromagnetiche e forti. 
+%Si possono utilizzare gli operatori cos\`i definiti per verificare la violazione di C, P o T nei
+%processi deboli.
+%
+In una condizione in cui $\mathscr{O}$ possa essere considerato una simmetria del sistema, dati due stati fisici $\alpha$ e $\beta$, deve valere la relazione:
+\begin{equation}
+ |\langle\alpha|\mathscr{O}^{\dag}\mathscr{O}|\beta\rangle|^2=|\langle\alpha|\beta\rangle|^2
+\end{equation}
+%
+cui corrispondono due diverse possibilit\`a:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+ \langle\alpha|\mathscr{O}^{\dag}\mathscr{O}|\beta\rangle = \langle\alpha|\beta\rangle \\
+ \langle\alpha|\mathscr{O}^{\dag}\mathscr{O}|\beta\rangle = {\langle\alpha|\beta\rangle}^{*}
+\end{array}
+\right.
+\end{displaymath}
+%
+pertanto gli operatori delle trasformazioni di simmetria possono essere unitari o antiunitari. 
+Nel seguito si dimostrerà che $\mathscr{C}$ e $\mathscr{P}$ sono entrambi unitari, mentre $\mathscr{T}$ \`e un operatore antiunitario.
+
+\section{Parità}
+\noindent
+La simmetria di parit\`a di un sistema fisico consiste nell'invarianza a seguito alla trasformazione:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+x \rightarrow -x\\
+y \rightarrow -y\\
+z \rightarrow -z
+\end{array}
+\right.
+\end{displaymath}
+Essa è chiamata anche simmetria per riflessione, perch\'e l'inversione degli assi pu\`o essere ottenuta componendo una rotazione di $\pi/2$ con la riflessione dell'asse di rotazione.
+%
+\subsection{L'operatore $\mathscr{P}$} 
+\noindent
+Secondo il Principio di Corrispondenza ci si aspetta che il valore di aspettazione dell'operatore posizione $\vec{X}$, cambi di segno in seguito ad una trasformazione di parit\`a:
+\begin{equation}
+ \langle\psi|\mathscr{P}^{\dag} \vec{X} \mathscr{P}|\psi\rangle= -\langle\psi|\vec{X}|\psi\rangle
+\end{equation}
+Ci\`o implica che:
+\begin{equation}
+ \mathscr{P}^{\dag} \vec{X} \mathscr{P} = -\vec{X}
+\end{equation}
+o, equivalentemente, che $\vec{X}$ anticommuti con $\mathscr{P}$: 
+\begin{equation}
+\{\vec{X},\mathscr{P}\}=0.
+\end{equation}
+
+Un generico autostato delle coordinate $|\vec{x}\rangle$, cui corrisponde l'autovalore $\vec{x}$ si trasformer\`a quindi secondo la relazione:
+ \begin{displaymath}
+\left\{
+\begin{array}{l}
+\vec{X}|\vec{x}\rangle = \vec{x}|x\rangle\\
+\vec{X}\mathscr{P}|\vec{x}\rangle = -\mathscr{P}\vec{X}|\vec{x}\rangle = -\mathscr{P}\vec{x}|\vec{x}\rangle
+\end{array}
+\right.
+\end{displaymath}
+Dunque $\mathscr{P}|\vec{x}\rangle$ è a sua volta un autostato dell'operatore posizione, corrispondente all'autovalore $-\vec{x}$.
+Tuttavia, all'autovalore $-\vec{x}$ corrisponde anche l'autostato $|-\vec{x}\rangle$:
+ \begin{displaymath}
+\left\{
+\begin{array}{l}
+\vec{X}|-\vec{x}\rangle = -\vec{x}|-x\rangle\\
+\vec{X}\mathscr{P}|\vec{x}\rangle = -\vec{x}|-x\rangle\\
+\end{array}
+\right.
+\end{displaymath}
+Per cui $\mathscr{P}|\vec{x}\rangle$ e $|-\vec{x}\rangle$ possono differire al più per un fattore di fase arbitrario:
+\begin{equation}
+\mathscr{P}|\vec{x}\rangle = e^{i\phi}|-\vec{x}\rangle
+\end{equation}
+Per convenienza, si considererà $\phi = 0$, quindi
+$\mathscr{P}|\vec{x}\rangle = |-\vec{x}\rangle$. Applicando due
+volte $\mathscr{P}$ si ottiene:
+\begin{equation}
+\mathscr{P}^2|\vec{x}\rangle = -\mathscr{P}|\vec{x}\rangle = |\vec{x}\rangle
+\end{equation}
+e quindi:
+\begin{equation}
+\mathscr{P}^2= 1
+\end{equation}
+Il che significa che l'operatore parità è hermitiano oltreché unitario:
+\begin{equation}
+\mathscr{P} = \mathscr{P}^{\dag} = \mathscr{P}^{-1}
+\end{equation}
+Si osserva che se un sistema fisico si trova un un autostato di parità
+\begin{equation}
+\langle\vec{x} | \psi_{P}\rangle = \pm \langle\vec{x} | \psi\rangle
+\end{equation}
+allora la funzione d'onda \`e una funzione pari o dispari delle coordinate:
+\begin{equation}
+\langle - \vec{x} | \psi\rangle = \pm \langle\vec{x} | \psi\rangle
+\end{equation}
+Ricorrendo alla usuale espansione della funzione d'onda in armoniche sferiche è possibile stabilire che le propriet\`a di trasformazione dipendono dallo stato di momento angolare orbitale, essendo:
+\begin{equation}
+Y^l_m\left( -\vec{x} \right) = \left( -1 \right)^l \cdot Y^l_m\left( \vec{x} \right)
+\end{equation}
+Si può quindi concludere che lo stato di parità di un sistema di $N$ particelle è dato da: 
+\begin{equation}
+\eta _P = \left( -1 \right)^l \prod_i^N \eta _P\left(i)\right.  
+\end{equation}
+dove con $\eta _P\left(i\right) $ è stata indicata la parità intrinseca della $i$-esima particella \cite{Sozzi}.
+
+\section{Coniugazione di carica}
+\noindent
+La \emph{coniugazione di carica} è la simmetria che si ha sotto lo scambio particella-antiparticella. Poiché una delle conseguenze del
+Teorema CPT è che ciascuna particella ha proprietà elettromagnetiche opposte a quelle della rispettiva antiparticella, spesso si cerca un 
+corrispettivo classico di questa simmetria nell'invarianza delle Equazioni di Maxwell per un cambio di segno della carica elettrica.
+In realtà lo scambio particella-antiparticella implica un cambio di segno di tutti i numeri quantici additivi (numero barionico, numero leptonico, etc.) 
+e non della sola carica elettrica, ragion per cui la coniugazione di carica non ha un vero e proprio analogo classico\cite{Sozzi}.
+
+\subsection{L'operatore $\mathscr{C}$} 
+\noindent
+Nella teoria quantistica la trasformazione di coniugazione di carica è ottenuta mediante un operatore unitario $\mathscr{C}$ sotto la cui azione l'operatore di 
+carica $Q$ cambia segno:
+\begin{equation}
+Q \rightarrow Q_C =\mathscr{C}^{\dag} Q \mathscr{C} = -Q
+\end{equation}
+o, equivalentemente:
+\begin{equation}
+\left\{Q,\mathscr{C} \right \} = 0
+\end{equation}
+
+In meccanica quantistica relativistica (con creazione e distruzione di particelle) la carica \`e associata a una trasformazione unitaria, che per una particella di momento $\vec{p}$, spin $\vec{s}$ e carica $q$ fornisce:
+\begin{equation}
+\mathscr{C} | \vec{p},s,q \rangle = \eta_C \cdot \mathscr{C} | \vec{p},s,-q \rangle
+\end{equation}
+
+Per particelle rappresentate da campi fermionici (quark e leptoni) l'azione dell'operatore di coniugazione di carica può essere definito a partire dalla equazione di 
+Dirac (per una derivazione di questa equazione, si veda l' \emph{Appendice A}). Per un elettrone si scrive:
+\begin{equation}
+ \Big[\Big(i\frac{\partial}{\partial x^\mu}-eA_\mu\Big) \gamma^\mu - m\Big] \Psi_e = 0
+\end{equation}
+mentre per la sua antiparticella, il positrone, si ha:
+\begin{equation}
+ \Big[\Big(i\frac{\partial}{\partial x^\mu}+eA_\mu\Big) \gamma^\mu - m\Big] \Psi_p = 0
+\end{equation}
+L'operatore $\mathscr{C}$ deve dunque trasformare le due equazioni l'una nell'altra.
+Si considera la complessa coniugata dell'equazione di Dirac per l'elettrone e la si moltiplica per $-1$.
+Si sfruttano le relazioni:
+\begin{equation}
+ i\frac{\partial}{\partial x^\mu} = -\Big(i\frac{\partial}{\partial x^\mu}\Big)^*
+\end{equation}
+\begin{equation}
+A_\mu = (A_\mu)^*  
+\end{equation}
+e si ottiene:
+\begin{equation}
+ \Big[\Big(i\frac{\partial}{\partial x^\mu}+eA_\mu\Big) (\gamma^\mu)^* - m\Big] \Psi_e = 0
+\end{equation}
+
+La ricerca di un operatore $\mathscr{C}$ che rappresenti l'operazione di coniugazione di carica si riduce perciò a quella di una matrice non singolare $C\gamma^0$ tale che:
+\begin{equation} \label{mat}
+ (C\gamma^0)(\gamma^\mu)^*(C\gamma^0)^{-1} = -\gamma^\mu
+\end{equation}
+In questo modo si otterrà:
+\begin{equation}
+ (C\gamma^0)\Bigg[\Bigg(i\frac{\partial}{\partial x^\mu} +eA_\mu\Bigg)(\gamma^\mu)^* + m \Bigg] (C\gamma^0)^{-1}(C\gamma^0)\psi^* = 0
+\end{equation}
+\begin{equation}
+  \Bigg[-\Bigg(i\frac{\partial}{\partial x^\mu} +eA_\mu\Bigg)\gamma^\mu + m \Bigg](C\gamma^0)\psi^* = 0
+\end{equation}
+\begin{equation}
+  \Bigg[\Bigg(i\frac{\partial}{\partial x^\mu} + eA_\mu\Bigg)\gamma^\mu - m \Bigg](C\gamma^0)\psi^* = 0
+\end{equation}
+Si costruisce ora la matrice $(C\gamma^0)$ nella rappresentazione in cui:
+\begin{equation}
+ \gamma^0 = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{bmatrix}; \; \; \; \gamma^1 = \begin{bmatrix}   0 & 0 & 0 & 1\\  0 & 0 & 1 & 0  \\0 & -1 & 0 & 0\\-1 & 0 & 0 & 0 \end{bmatrix}
+\end{equation}
+\begin{equation}
+ \gamma^2 = \begin{bmatrix} 0 & 0 & 0 & -i\\  0 & 0 & i & 0  \\0 & i & 0 & 0\\-i & 0 & 0 & 0 \end{bmatrix}; \; \; \; \gamma^3 = \begin{bmatrix}   0 & 0 & 1 & 0\\ 0 & 0 & 0 & -1 \\ -1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{bmatrix}
+\end{equation}
+\begin{equation}
+ g = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{bmatrix}
+\end{equation}
+Dalle proprietà delle matrici esposte sopra, si ricava che, per tutti gli indici $\mu$, la relazione \eqref{mat} si riduce a:
+\begin{equation}
+ C(\gamma^{\mu})^T C^{-1} = - \gamma^{\mu}
+\end{equation}
+\begin{equation}
+ C(\gamma^{\mu})^T = -\gamma^{\mu} C
+\end{equation}
+Che equivale a dire:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+ C\gamma^{\mu} = -\gamma^{\mu} C \ \ \ \ \ \ \ \ \ \ \mu = 0; 2 \\
+ C\gamma^{\mu} =  \gamma^{\mu} C \ \ \ \ \ \ \ \ \ \ \mu = 1; 3
+\end{array}
+\right.
+\end{displaymath}
+Una possibile scelta di $C$, compatibile con quanto detto finora, pu\`o essere:
+\begin{equation} \label{matriceC}
+ C = i\gamma^2\gamma^0
+\end{equation}
+Si può mostrare, per calcolo diretto, che l'operatore di coniugazione di carica, definito da $\mathscr{C} = C\gamma^0$, con $C$ data da \eqref{matriceC}, gode 
+delle seguenti proprietà:
+\begin{equation}
+ C^2 = \mathscr{I} \ \ \ \ \ \ \ C^{-1} = C^{\dag} = C
+\end{equation}
+Per cui anche $\mathscr{C}$ risulta hermitiano ed unitario\cite{BigiSanda}.
+%
+\section{Inversione temporale}
+\noindent
+In meccanica classica la simmetria di inversione temporale di un sistema implica l'invarianza della dinamica microscopica sotto la trasformazione:
+\begin{equation}
+t' \rightarrow -t
+\end{equation}
+ Ciò  è dovuto al fatto che la seconda legge di Newton 
+\begin{equation}
+\vec{F} = m \frac{d^2\vec{x}}{dt^2}
+\end{equation}
+contiene la derivata del secondo ordine nel tempo. 
+Per cui se $\vec{x}(t)$ è una soluzione delle equazioni del moto, lo sar\`a anche $\vec{x}(-t)$. 
+
+La velocità per inversione temporale si trasforma come:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+ t' \rightarrow -t\\
+ \vec{\dot{x}}(t') = \frac{d\vec{x}(t')}{dt'} = \frac{d\vec{x}(-t)}{d(-t)} = - \vec{\dot{x}}(t) 
+\end{array}
+\right.
+\end{displaymath}
+Ciò porta a definire la trasformazione di inversione temporale come la simmetria che permette di riportare alle condizioni iniziali un qualsiasi sistema dinamico, invertendo ad un dato istante il verso dei vettori velocit\`a di tutte le particelle che lo compongono e lasciandolo evolvere senza ulteriori interventi.
+%
+\subsection{Operatori antilineari e antiunitari}
+\noindent
+Operatori lineari ed antilineari differiscono tra loro per il diverso comportamento che hanno quando si applicano a combinazioni lineari di ket.
+In particolare, considerati due generici operatori $\mathscr{L}$(lineare) e $\mathscr{A}$(antilineare), valgono le relazioni:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+\mathscr{L}(\alpha |a \rangle + \beta |b \rangle) = \alpha \mathscr{L}|a \rangle  + \beta \mathscr{L}|a \rangle\\
+\mathscr{A}(\alpha |a \rangle + \beta |b \rangle) = \alpha^*\mathscr{L}|a \rangle  + \beta^* \mathscr{L}|a \rangle
+\end{array}
+\right.
+\end{displaymath}
+Si osserva che un operatore antilineare non commuta con una costante, interpretata come operatore moltiplicativo, se questa ha parte immaginaria non nulla:
+\begin{equation}
+\mathscr{A} \cdot c = c^* \cdot \mathscr{A} \ \  \longrightarrow \
+\ [\mathscr{A},c] = 2 \Im\{c\}
+\end{equation}
+Gli operatori antiunitari rappresentano una particolare classe di operatori unitari. 
+Essi possono essere definiti come il risultato dell'applicazione successiva di due operatori:
+\begin{equation}
+\mathscr{O} = \mathscr{U}\mathscr{K}
+\end {equation}
+dove $\mathscr{U}$ è un opportuno operatore unitario, mentre $\mathscr{K}$ è l'operatore di complessa coniugazione.
+\begin{equation}
+\mathscr{K} (\alpha |a\rangle + \beta |b\rangle) =
+\alpha^*\mathscr{K}  |a\rangle + \beta^* \mathscr{K}|b\rangle
+\end {equation}
+In generale, in uno spazio di Hilbert, l'operatore di complessa coniugazione non può essere definito in maniera indipendente dalla base scelta.
+Per chiarire questo punto si considerano due generiche basi di ket $\{|a_k \rangle \}$ e $\{|b_j \rangle \}$.
+Nella base $\{|a_k \rangle \}$, il vettore k-esimo viene rappresentato come un vettore colonna avente k-esima componente uguale ad uno e tutte 
+le altre pari a zero. Ad esempio:
+\begin{equation}
+a_1 =
+   \begin{bmatrix}
+ 1\\
+ 0\\
+ 0\\
+\vdots
+\end{bmatrix}
+\end{equation}
+Poiché $a_1$ è reale, l'applicazione dell'operatore $\mathscr{K}$ non provoca ad esso alcuna modifica.
+\begin{equation}
+|a_1 \rangle = \mathscr{K}|a_1\rangle
+\end{equation}
+Consideriamo lo stesso problema nella base {$b_j$}. Ora sono i ket della nuova base ad essere rappresentati come vettori colonna
+aventi una componente unitaria e le altre nulle. Gli $|a_k\rangle$ possono essere da questi calcolati nel modo seguente:
+\begin {equation}
+|a_k \rangle= \sum {\langle b_j | a_k \rangle |b_j\rangle}
+\end {equation}
+Se, a questo punto, si calcolano $|a_1\rangle$ e
+$\mathscr{K}|a_1\rangle$ si ottiene:
+\begin{equation}
+|a_1 \rangle= \sum {\langle b_j | a_1 \rangle |b_j\rangle}
+\end{equation}
+\begin{equation}
+\mathscr{K}|a_1 \rangle= \sum {\langle b_j | a_1 \rangle^*|b_j\rangle}
+\end{equation}
+Nella seconda equazione si è tenuto conto che nella base impiegata tutti i $|b_j\rangle$ sono reali, quindi invarianti in seguito
+all'applicazione dell'operatore di complessa coniugazione. Poiché in generale $\langle b_j | a_1 \rangle \ \neq \langle b_j | a_1
+\rangle^*$, si deduce che nella nuova base $\{ |b_k\rangle \}$, $a_1$ non è più invariante per l'applicazione di $\mathscr{K}$
+cioè, più in generale, che l'azione dell'operatore $\mathscr{K}$ su un dato vettore dipende dalla base scelta per rappresentare il vettore stesso.
+
+L'operatore di inversione temporale $\mathscr{T}$, come mostreremo nella sezione seguente, è un operatore antiunitario.  Esprimendo $\mathscr{T}$ come prodotto di un operatore unitario e l'operatore di complessa coniugazione $\mathscr{K}$ si ha:
+\begin{equation}
+ \mathscr{T} = \mathscr{U}_T\mathscr{K}
+\end{equation}
+da cui si deduce che poich\'e ad esso corrisponde ad una trasformazione del sistema fisico, $\mathscr{T}$ deve poter essere definito in maniera indipendente dalla base scelta per la rappresentazione. L'operatore $\mathscr{U}_T$ 
+allora a sua volta deve presentare una dipendenza dalla base che compensi quella di $\mathscr{K}$\cite{Branco}.
+%
+\subsection{L'operatore di inversione temporale $\mathscr{T}$ come operatore antiunitario.}
+\noindent
+L'operatore $\mathscr{T}$ deve agire sugli osservabili in maniera tale che questi si trasformino in maniera consistente con  quanto avviene in fisica classica. Devono valere quindi le seguenti relazioni:
+\begin{equation}
+\mathscr{T}^{-1} \vec{x} \mathscr{T} = \vec{x}
+\end{equation}
+\begin{equation}
+\mathscr{T}^{-1} \vec{p} \mathscr{T} = -\vec{p}
+\end{equation}
+\begin{equation}
+\mathscr{T}^{-1} \vec{J} \mathscr{T} = -\vec{J}
+\end{equation}
+Queste relazioni forniscono un primo argomento a sostegno dell'ipotesi che $\mathscr{T}$, a differenza di $\mathscr{C}$ e $\mathscr{P}$, non pu\`o essere un operatore unitario, ma deve essere piuttosto un operatore antiunitario. \\
+Si consideri la relazione di commutazione tra l'operatore coordinate e l'operatore impulso:
+\begin{equation}
+[x_j, p_k] = i\delta_{jk}
+\end{equation}
+$\mathscr{T}$ modifica il segno di $p_k$ ma non quello di $x_j$, per cui il calcolo del commutatore in seguito all'applicazione della riflessione temporale risulta consistente con le regole di commutazione quantistiche solo se si accetta l'ipotesi che
+$i\delta_{jk}$ cambi segno in seguito alla trasformazione, cio\`e che $\mathscr {T}$ sia antiunitario.\\
+Si consideri adesso l'applicazione di $\mathscr{T}$  ad un sistema fisico in evoluzione.
+L'operatore di evoluzione temporale S \`e definito come:
+\begin{equation}
+|\psi(t+dt)\rangle = S|\psi(t)\rangle = (1-\frac{iH}{\hbar}dt)|\psi(t)\rangle
+\end{equation}
+dove $\psi$ è la funzione d'onda del sistema, $H$ l'operatore hamiltoniano ed $1$ l'identità.
+
+Si consideri quindi l'applicazione dell'operatore di evoluzione ad un sistema a cui è stato applicato $\mathscr{T}$; si consideri poi l'applicazione di $\mathscr{T}$ a un sistema lasciato  libero di evolvere indietro nel tempo, per un intervallo di tempo $d(-t)$.
+Poich\'e si stanno trattando sistemi per i quali T rappresenta una simmetria esatta, queste operazioni devono portare allo stesso risultato netto. Per cui deve valere l'uguaglianza:
+\begin{equation}
+ (1-\frac{iH}{\hbar}dt)\mathscr{T}|\psi(t)\rangle = \mathscr{T}(1-\frac{iH}{\hbar}d(-t))|\psi(t)\rangle
+\end{equation}
+da cui si arriva a:
+\begin{equation}\label{equazio}
+ -iH\mathscr{T}|\psi(t)\rangle =  \mathscr{T}iH|\psi(t)\rangle
+\end{equation}
+Imponendo la relazione di commutazione dell'operatore d'inversione temporale con l'Hamiltoniana del sistema $[\mathscr{T},\mathscr{H}] = 0$, e considerando che $|\psi(t)\rangle$ \`e una funzione d'onda arbitraria, si conclude che la relazione \eqref{equazio}, pu\`o essere soddisfatta se solo se $\mathscr{T}$ \`e un operatore antiunitario\cite{BigiSanda}.
+
+\subsection{Autovalori di $\mathscr{T}$,$\mathscr{T}^2$ e degenerazione di Kramer}
+\noindent
+Contrariamente a ciò che avviene per gli operatori $\mathscr{C}$ e $\mathscr{P}$, gli autovalori di $\mathscr{T}$ non hanno significato fisico, quindi non \`e possibile associare un numero quantico conservato a questo operatore.
+Si consideri a questo scopo l'applicazione di $\mathscr{T}$ ad una generica funzione d'onda, all'istante $t = 0$:
+\begin {equation}
+\mathscr{T}|\psi(0)\rangle = c|\psi(0)\rangle
+\end {equation}
+dove $c$ rappresenta l'autovalore relativo a $\psi(0)$. 
+Si lascia dunque evolvere il sistema e si considera:
+\begin{equation}
+|\psi(dt)\rangle = S |\psi(0) \rangle
+\end{equation}
+Applicando l'inversione temporale ai due lati di questa equazione si ottiene:
+\begin{equation}
+\mathscr{T}|\psi(t)\rangle = \mathscr{T}S|\psi(0)\rangle =
+\mathscr{T}S\mathscr{T}^{-1}\mathscr{T}|\psi(0)\rangle = cS^{\dag}|\psi(0)\rangle
+\end{equation}
+Nell'ultima uguaglianza si \`e sfruttata la relazione che segue dall'antiunitariet\`a di $\mathscr{T}$, 
+$S^{\dag} = \mathscr{T} S {\mathscr{T}}^{-1}$.\\
+In generale, $cS^{\dag}|\psi(0)\rangle$ non \`e proporzionale a $|\psi(t)\rangle$,
+per questo motivo non \`e possibile associare la conservazione di un numero quantico agli autovalori di $\mathscr{T}$.\\
+Il ragionamento fin qui esposto si fonda sull'ipotesi di antiunitariet\`a di $\mathscr{T}$.
+L'operatore di doppia inversione temporale $\mathscr{T}^2$, d'altro canto, \`e unitario e quindi ad esso \`e possibile associare autovalori di significato fisico.
+L'applicazione di $\mathscr{T}^2$ pu\`o modificare la funzione d'onda del sistema al pi\`u per un fattore di fase:
+\begin{equation}\label{equazione}
+\mathscr{T}^2 = \mathscr{U}\mathscr{K}\mathscr{U}\mathscr{K} =
+\mathscr{U}\mathscr{U}^*\mathscr{K}\mathscr{K} =
+\mathscr{U}\mathscr{U}^* = \eta
+\end{equation}
+dove $\eta$ \`e appunto una matrice diagonale di elementi complessi di modulo unitario, che indicheremo con $(e^{i\eta_1} ...\ e^{i\eta_n})$.
+Dalla definizione di operatore unitario segue che $U^*=(U^T)^{-1}$, quindi dall'ultima uguaglianza della \eqref{equazione} si ottiene:
+\begin{equation}
+U = \eta U^T
+\end{equation}
+trasponendo a destra e a sinistra:
+\begin {equation}
+U^T = U\eta
+\end{equation}
+infine, sostituendo nella precedente:
+\begin{equation}
+U = \eta U \eta
+\end{equation}
+Per ogni coppia di indici $j$ e $k$ si deve avere:
+\begin{equation}
+ e^{i(\eta_j + \eta_k)} = 1
+\end{equation}
+Quindi si pone $j = k$ e si ottiene:
+\begin{equation}
+ e^{i\eta_i} = \pm1
+\end{equation}
+Si è così dimostrato che l'operatore di doppia inversione temporale ammette come soli possibili autovalori $+1$ e $-1$.
+È possibile dimostrare che i sistemi fermionici sono autostati di $\mathscr{T}^2$ di autovalore $-1$, i sistemi bosonici sono autostati di autovalore $+1$.
+Tutto ciò ha un'importante conseguenza: in un sistema fermionico invariante rispetto a $\mathscr{T}$, gli autostati dell'energia ammettono una (almeno) doppia degenerazione.
+La dimostrazione è molto semplice. Si consideri un autostato dell'energia $|E\rangle$ di autovalore $E$:
+\begin{equation}
+ H|E\rangle = E|E\rangle
+\end{equation}
+Sia ora $|E_{\mathscr{T}}\rangle$ il trasformato di $|E\rangle$ sotto $\mathscr{T}$. Per l'invarianza del sistema anche questo autostato deve avere autovalore $E$.
+Inoltre, ricordando che $\mathscr{T}^2|E\rangle = -|E\rangle$ si ricava:
+\begin{equation}
+ \langle E|E_{\mathscr{T}}\rangle = \langle E_{\mathscr{T}}|\mathscr{T}^{\dag}\mathscr{T}|E\rangle = \langle E|(\mathscr{T}^{\dag})^2\mathscr{T}|E\rangle = -\langle E|\mathscr{T}|E\rangle = \langle E|E_{\mathscr{T}}\rangle
+\end{equation}
+Per cui:
+\begin{equation}
+ \langle E|E_{\mathscr{T}}\rangle = 0
+\end{equation}
+I due autostati sono tra loro ortogonali, quindi non rappresentano lo stesso stato fisico. Quanto qui dimostrato viene chiamato \emph{degenerazione di Kramer}\cite{BigiSanda}.

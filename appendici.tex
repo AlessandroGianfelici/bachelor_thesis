@@ -1,0 +1,133 @@
+
+    \index{appendici}
+  
+\chapter{Equazione di Dirac}%SEZIONE COMPLETA
+\noindent
+L'equazione di Dirac venne introdotta in meccanica quantistica da P.A.M. Dirac per descrivere la dinamica di un fermione di spin $1/2$ in regime relativistico \cite{Dirac}.
+In analogia con quanto gi\`{a} fatto prima di lui da Schroedinger, che nel ricavare la sua celebre equazione riscrisse in termini operatoriali l'Hamiltoniana classica, Dirac 
+calcol\`{o} l'equivalente in termini di operatori dell'Hamiltoniana relativistica.\\Nella forma in cui viene solitamente scritta, questa risulta essere:
+\begin{equation}\label{HAMILTONIANA}
+H = \sqrt{m^{2}c^{4}+p^{2}c^{2}}
+\end{equation}
+Sostituire direttamente le espressioni operatoriali $H=i\hbar\frac{\partial}{\partial t}$ e $\vec{p}=-i\hbar \vec{\nabla}$ nella 
+\eqref{HAMILTONIANA} porta ad una equazione contenenti radici quadrate di operatori differenziali, cioè ad oggetti non trattati dall'analisi
+matematica. Se invece si cerca di aggirare questa difficoltà elevando al quadrato i due lati della \eqref{HAMILTONIANA} prima
+di eseguire le sostituzioni (che è il procedimento seguito da \emph{Klain e Gordon}, che in questo modo dedussero la prima equazione d'onda relativistica)
+si ottiene una equazione del secondo ordine nel tempo. Una tale equazione non ammette una densità di corrente di probabilità definita positiva, il che è in contrasto con l'interpretazione probablistica della Meccanica Quantistica.
+Dirac dedusse la prima equazione d'onda relativistica che fosse coerente con questa interpretazione e la applicò alla descrizione fisica 
+dell'elettrone.
+Egli cercò una relazione tra energia ed impulso che fosse lineare e compatibile con la \eqref{HAMILTONIANA}:
+\begin{equation}
+ H = c\sum_i p_i\gamma^i + \gamma^0 mc^2
+\end{equation}
+Oppure, ricordando che $H = E$:
+\begin{equation} \label{k}
+ E - c\sum_i p_i\gamma^i - \gamma^0 mc^2 = 0
+\end{equation}
+Dove le quattro componenti di $\gamma$, ($\gamma^1$, $\gamma^2$, $\gamma^3$ e $\gamma^0$) sono indipendenti da ${r}$, $t$, 
+${p}$ ed $E$.
+A questo punto si eseguono le sostituzioni operatoriali e si ottiene l'\emph{equazione di Dirac}:
+\begin{equation}
+  i\hbar \frac{\partial}{\partial t}\Psi_i = i\hbar c\sum_{j=1}^{N}\sum_{k=1}^{3}\gamma_{ij}^k\frac{\partial}{\partial x_k} \Psi_j +\sum_{j=1}^{N}\gamma_{ij}^0mc^2\Psi_j
+\end{equation}
+dove $N$ è il rango delle matrici quadrate $\gamma^1$, $\gamma^2$, $\gamma^3$ e $\gamma^0$.
+L'Hamiltoniana $H$ deve essere Hermitiana, $H = H^{\dag}$, per questo motivo anche le matrici $\gamma^1$, $\gamma^2$, $\gamma^3$ e $\gamma^0$ devono
+esserlo. Moltiplicando ora da sinistra la \eqref{k} per $E + c\sum_i p_i\gamma^i + \gamma^0 mc^2 = 0$ ed interpretando il risultato in termini operatoriali si ottiene:
+\begin{equation}\label{pippo}
+ \Big\{E^2-c^2\Big[\sum_{k=1}^{3}(\gamma^k)^2p{_k}^2 + \sum_{k<l}(\gamma^k\gamma^l+\gamma^l\gamma^k)p_kp_l\Big] - mc^3\Big[\sum_{k=1}^{3}(\gamma^k\gamma^0+\gamma^0\gamma^k)p_k\Big] - m^2c^4{\gamma^0}^2\Big\}\Psi = 0
+\end{equation}
+Confrontando la \eqref{pippo} con la relazione relativistica tra energia ed impulso $E^2 = p^2c^2 + m^2c^4$ si ottiene che le due sono coerenti l'una con l'altra
+se valgono le seguenti relazioni:
+\begin{equation} \label{relazione1}
+ (\gamma^1)^2=(\gamma^2)^2=(\gamma^3)^2=(\gamma^0)^2 = I
+\end{equation}
+\begin{equation} \label{relazione2}
+ \{\gamma^1,\gamma^2\} = \{\gamma^2,\gamma^3\} = \{\gamma^3,\gamma^1\} = 0
+\end{equation}
+\begin{equation} \label{relazione3}
+ \{\gamma^1,\gamma^0\} = \{\gamma^2,\gamma^0\} = \{\gamma^3,\gamma^0\} = 0
+\end{equation}
+Si può dimostrare che il rango minino delle matrici $\gamma^1$, $\gamma^2$, $\gamma^3$ e $\gamma^0$ affinchè le relazioni 
+\eqref{relazione1}, \eqref{relazione2} e \eqref{relazione3} siano soddifatte è $N = 4$. Ciò implica che anche la funzione d'onda $\Psi$ che soddisfa il 
+sistema deve avere quattro componenti. Ciascuna componente $\Psi_i$è detta \emph{spinore di Dirac}. 
+Esistono infinite rappresentazioni per le matrici che entrano nella definizione dell'equazione di Dirac, ma la più utilizzata in fisica è la cosiddetta 
+\emph{rappresentazione di Dirac}:
+\begin{equation}
+ \gamma^0 = \Big(\begin{matrix} I & 0 \\ 0 & -I \end{matrix}\Big)
+\end{equation}
+\begin{equation}
+ \gamma^i = \Big(\begin{matrix} 0 & \sigma_i \\ \sigma_i & 0 \end{matrix}\Big)
+\end{equation}
+
+dove $i \in \{1,2,3\}$, $I$ è la matrice identità di rango $2$ e le $\sigma_i$ sono le \emph{matrici di Pauli}:
+\begin{equation}\label{sigma1}
+ \sigma_1 = \Big(\begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix}\Big)
+\end{equation}
+\begin{equation}\label{sigma2}
+ \sigma_2 = \Big(\begin{matrix} 0 & -i \\ i & 0 \end{matrix}\Big)
+\end{equation}
+\begin{equation}\label{sigma3}
+ \sigma_3 = \Big(\begin{matrix} 1 & 0 \\ 0 & -1 \end{matrix}\Big)
+\end{equation}
+L'equazione di Dirac, qui dedotta per una particella libera, è facilmente generalizzabile al caso di una particella carica in un campo elettromagnetico
+eseguendo le sostituzioni, note dall'elettromagnetismo classico:
+\begin{equation}
+ p' \rightarrow \Big(p-\frac{qA}{c}\Big)
+\end{equation}
+\begin{equation}
+ E' \rightarrow E - qV
+\end{equation}
+dove $A$ è il potenziale vettore, $V$ il potenziale scalare e $q$ la carica elettrica della particella in esame.
+In questo modo si ottiene l'equazione di Dirac per una particella carica immersa in un campo elettromagnetico:
+\begin{equation}
+ \Big[\Big(i\hbar\frac{d}{dx^\mu}-\frac{q}{c}A_\mu\Big) \gamma^\mu - mc\Big] \Psi = 0
+\end{equation} \cite{Bransden}
+
+
+\chapter{Formula di Sokhotski–Plemelj}%SEZIONE COMPLETA
+\noindent
+La \emph{formula di Sokhotski–Plemelj} viene spesso scritta, in maniera simbolica, come:
+\begin{equation}
+ \lim_{\epsilon \rightarrow 0}\frac{1}{x\pm i\epsilon} = P\Big(\frac{1}{x}\Big) \mp \pi\delta(x)
+\end{equation}
+Dove il limite è inteso in senso distribuzionale, in $\mathscr{D}'$.
+Per dimostrare questa formula, consideriamo la distribuzione di tipo funzione:
+\begin{equation}
+T = \ln(x\pm i\epsilon) = \ln(z)
+\end{equation}
+con $z \in \mathbb{C}$. Si sceglie la determinazione principale del logaritmo:
+\begin{displaymath}
+\left\{
+\begin{array}{l}
+\ln(z) = \ln|z| + i\arg(z) \\
+-\pi<\arg(z)<\pi
+\end{array}
+\right.
+\end{displaymath} 
+Quindi, per $x\in\mathbb{R}$, si ha $\arg(x) = 0$ se $x>0$ e $\arg(x) = \pi$ se $x<0$. 
+La funzione logaritmo, con $\epsilon$ finito, è localmente sommabile, quindi permette di definire una distribuzione $\mathscr{D}'$.
+La derivata distribuzionale coincide con la derivata ordinaria, per cui si può scrivere:
+\begin{equation}\label{1}
+ \frac{d}{dx}\ln(x\pm i\epsilon) = \frac{1}{x\pm i\epsilon} =  \frac{d}{dx}\ln|x\pm i\epsilon| +i\frac{d}{dx}\arg(x\pm i\epsilon)
+\end{equation}
+La derivata distribuzionale è un'applicazione continua in $\mathscr{D}'$, per cui vale:
+\begin{equation}\label{2}
+\mathscr{D}'-\lim_{\epsilon\rightarrow0^+}\arg(x\pm i\epsilon) = \pm\pi\theta(-x) = \pm\pi\mp\pi\theta(x)
+\end{equation}
+Dove con $\theta(x)$ si è indicata la \emph{funzione di Heaviside}, che assume valore $1$ se il suo argomento è maggiore di $0$ e $0$ altrimenti.
+Ricordando infine che, in senso distribuzionale:
+\begin{equation}\label{4}
+ \frac{d}{dx} \theta(x) = \delta(x) 
+\end{equation}
+\begin{equation}\label{3}
+ \frac{d}{dx} \ln(x) = P\Big(\frac{1}{x}\Big) 
+\end{equation}
+(dove $P$ indica il valore principale di Cauchy) si ottiene, sostituendo la \eqref{3}, la \eqref{2} e la \eqref{4} nella \eqref{1}:
+\begin{equation}
+  \lim_{\epsilon \rightarrow 0}\frac{1}{x\pm i\epsilon} = P\Big(\frac{1}{x}\Big) \mp \pi\delta(x)
+\end{equation}
+
+
+
+
+
